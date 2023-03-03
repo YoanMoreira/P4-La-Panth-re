@@ -800,6 +800,9 @@ h4 {
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #000000!important;
+    width: 70%;
+    border-radius: 20px;
+    border-color: #F3976C;
 }
 
 .btn-atomic-tangerine:hover {
@@ -808,7 +811,7 @@ h4 {
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #000000!important;
 }
 
 .ltc-white:hover {
