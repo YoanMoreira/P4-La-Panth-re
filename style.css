@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(30, 30, 30, 1);
 }
 
 .d-bloc .a-btn:hover,
@@ -361,10 +361,7 @@ a:hover {
     position: relative;
     z-index: 2;
 }
-.site-navigation{
-    display: grid;
-    margin-right: 100px;
-}
+
 
 @media (min-width: 768px) {
     .site-navigation {
@@ -512,9 +509,6 @@ button {
 .form-control {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
-    border-radius: 5px;
-    width: 70%;
-    height: 50px;
 }
 
 .form-group{
@@ -693,7 +687,7 @@ a {
 }
 
 p {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
@@ -704,6 +698,16 @@ p {
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
+}
+
+.citation {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.signature {
+    font-size: 15px;
 }
 
 .cta-hero {
@@ -717,9 +721,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
-    display: flex;
-    justify-content: space-around;
+    margin: 40px auto auto auto;
 }
 
 h2 {
@@ -759,7 +761,6 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
-    max-width: 320px;
 }
 
 .portfolio-row {
@@ -794,14 +795,12 @@ h4 {
 }
 
 .tc-white {
-    color: rgb(0, 0, 0)!important;
+    color: rgb(255, 255, 255)!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #000000!important;
-    width: 70%;
-    border-radius: 20px;
     border-color: #F3976C;
 }
 
@@ -871,13 +870,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -896,8 +895,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left:initial;
+        padding-right:initial;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -907,8 +906,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1061,5 +1058,12 @@ h4 {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+    .bloc {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .row-no-gutters {
+        display: flex;
     }
 }
